@@ -1,8 +1,3 @@
-¡Claro que sí! Un buen archivo `README.md` es fundamental para cualquier proyecto, ya que te servirá de guía si dejas de trabajar en él un tiempo y vuelves después, o si decides compartirlo con otras personas (por ejemplo, en GitHub).
-
-Aquí tienes el contenido formateado en Markdown, listo para que lo copies y lo pegues en un archivo llamado `README.md` en la raíz de tu proyecto.
-
----
 
 ```markdown
 # Generador de Web Estática desde Mastodon 🐘
