@@ -1,0 +1,88 @@
+/* --- Estilos Generales --- */
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 1000px; /* Ampliamos el ancho máximo para aprovechar la retícula */
+    margin: 40px auto; 
+    padding: 20px; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #f4f4f9;
+}
+a { color: #2b90d9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Retícula Responsiva para index.html --- */
+ul.post-list { 
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto (móviles): 1 columna */
+    gap: 20px; /* Espacio entre las tarjetas */
+    list-style-type: none; 
+    padding: 0; 
+}
+
+/* Cuando la pantalla mide más de 768px (Tablets y Computadoras) */
+@media (min-width: 768px) {
+    ul.post-list {
+        /* Crea columnas que se ajustan automáticamente; mínimo de 300px de ancho */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Diseño de cada tarjeta en el index */
+li.post-item { 
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+a.post-title { font-weight: bold; font-size: 1.1em; margin-bottom: 10px; }
+small.post-date { color: #888; margin-top: auto; /* Empuja la fecha al fondo de la tarjeta */}
+
+/* --- Estilos para el post individual --- */
+.post-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+.meta { color: #666; font-size: 0.9em; margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px; }
+
+/* --- Estilos para multimedia --- */
+.media-container { margin-top: 15px; text-align: center; }
+.media-content { max-width: 100%; height: auto; border-radius: 8px; }
+
+/* */ 
+
+/* --- Estilos del Menú General --- */
+.menu-general {
+    background-color: #2b90d9; /* Color azul estilo Mastodon */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-general ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces bajen de línea en celulares */
+    gap: 15px;
+    align-items: center;
+}
+
+.menu-general a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.menu-general a:hover {
+    text-decoration: underline;
+}
+
+.menu-general a.enlace-inicio {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 2px solid rgba(255,255,255,0.3);
+}
