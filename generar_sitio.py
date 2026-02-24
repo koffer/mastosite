@@ -87,10 +87,9 @@ for entrada in feed.entries:
 
 # --- PASO 2: CONSTRUIR EL MENÚ GENERAL HTML ---
 html_enlaces_menu = ""
-for post_xalapa in posts_destacados_xalapa:
-    # Usamos 40 caracteres máximo para el menú superior para que no se sature
-    titulo_menu = post_xalapa["titulo"][:40] + "..." if len(post_xalapa["titulo"]) > 40 else post_xalapa["titulo"]
-    html_enlaces_menu += f'<li><a href="{post_xalapa["archivo"]}">{titulo_menu}</a></li>\n'
+# Usamos enumerate para tener un contador (i) que empiece en 1
+for i, post_xalapa in enumerate(posts_destacados_xalapa, start=1):
+    html_enlaces_menu += f'<li><a href="{post_xalapa["archivo"]}">Menú {i}</a></li>\n'
 
 html_menu = f"""
     <nav class="menu-general">
