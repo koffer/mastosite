@@ -1,5 +1,7 @@
 
 ```markdown
+![ultimospost](https://github.com/user-attachments/assets/4740f680-02ab-4e3b-8459-290d92ae20d3)
+
 # Generador de Web Estática desde Mastodon 🐘
 
 Este proyecto es un script en Python que lee el feed RSS de cualquier cuenta pública de Mastodon y genera automáticamente un sitio web estático (archivos HTML). Es ideal para tener un respaldo de tus publicaciones o crear un blog personal ligero, rápido y sin necesidad de bases de datos.
